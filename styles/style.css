@@ -1,0 +1,173 @@
+body {
+  padding: 75px 0;
+}
+
+main {
+  display: grid;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box1 box1"
+    "box2 box3";
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 40%;
+  height: 50%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 20px;
+  cursor: url(../images/favicon-32x32.png), auto;
+
+}
+
+main:hover {
+  transform: scale(1.02);
+
+}
+
+dt {
+  font-size: 18px;
+  color: cornsilk;
+  padding: 15px;
+}
+
+
+dd {
+
+  font-size: 15px;
+  color: #E7ECE6;
+
+}
+
+button {
+  padding: 15px 25px;
+  width: 40%;
+  margin: 0% 29%;
+  border: white;
+  color: cornsilk;
+  border-radius: 5px;
+
+  background-image: linear-gradient(#11998e, #38ef7d);
+  cursor: pointer;
+
+}
+
+.header5 {
+  font-size: 18px;
+  color: cornsilk;
+  padding: 15px;
+}
+
+.header2 {
+  font-size: 25px;
+  color: cornsilk;
+  padding: 0px 20px;
+}
+
+.smaller1 {
+  font-size: 13.5px;
+  color: grey;
+  padding: 0px 20px;
+}
+
+.smaller2 {
+  font-size: 15px;
+  color: white;
+  padding: 0px 20px;
+}
+
+
+.smaller3 {
+  padding: 20px 5px 0px 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 50px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.box1 {
+  background-color: rgb(255, 255, 255);
+  grid-area: box1;
+  padding: 15px;
+}
+
+
+.box2 {
+  background-color: #FF5733;
+  grid-area: box2;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.box3 {
+  background-color: #0DBEC9;
+  grid-area: box3;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+
+.box2:hover {
+  transform: scale(1.02);
+}
+
+
+.box3:hover {
+  transform: scale(1.02);
+}
+
+.box1 h3 {
+  background: -webkit-linear-gradient(#00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box1 h4 {
+  background: -webkit-linear-gradient(#fdc830, #f37335);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box1 h5 {
+  color: darkgray
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+  }
+
+  .box2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box3 {
+    width: 300px;
+    height: 300px;
+  }
+}
