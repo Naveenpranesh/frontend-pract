@@ -1,0 +1,315 @@
+html,
+body::after {
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  padding: 75px 0;
+  background-image: linear-gradient(to right top, #ff416c, #ff405d, #ff424e, #ff453e, #ff4b2b);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "box1 box1"
+    "box2 box3";
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 40%;
+  height: 50%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 20px;
+  cursor: url(../images/favicon-32x32.png), auto;
+
+}
+
+main:hover {
+  transform: scale(1.02);
+}
+
+dt {
+  font-size: 18px;
+  color: cornsilk;
+  padding: 15px;
+}
+
+
+dd {
+
+  font-size: 15px;
+  color: #E7ECE6;
+
+}
+
+button {
+  padding: 15px 25px;
+  width: 40%;
+  margin: 0% 29%;
+  border: white;
+  color: cornsilk;
+  border-radius: 5px;
+  background-image: linear-gradient(#11998e, #38ef7d);
+  cursor: pointer;
+}
+
+.header5 {
+  font-size: 18px;
+  color: cornsilk;
+  padding: 15px;
+}
+
+.header2 {
+  font-size: 25px;
+  color: cornsilk;
+  padding: 0px 20px;
+}
+
+.smaller1 {
+  font-size: 13.5px;
+  color: grey;
+  padding: 0px 20px;
+}
+
+.smaller2 {
+  font-size: 15px;
+  color: white;
+  padding: 0px 20px;
+}
+
+
+.smaller3 {
+  padding: 20px 5px 0px 0px;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  padding: 50px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  cursor: pointer;
+}
+
+.attribution a:visited {
+  color: orange;
+}
+
+.box1 {
+  background-color: rgb(255, 255, 255);
+  grid-area: box1;
+  padding: 15px;
+}
+
+
+.box2 {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  grid-area: box2;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+
+}
+
+.box3 {
+  background-image: linear-gradient(to right top, #11998e, #00af94, #00c593, #00da8b, #38ef7d);
+  grid-area: box3;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border: solid white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.box2:hover {
+  transform: scale(1.02);
+}
+
+.box3:hover {
+  transform: scale(1.02);
+}
+
+.box1 h3 {
+  background: -webkit-linear-gradient(#00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box1 h4 {
+  background: -webkit-linear-gradient(#fdc830, #f37335);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box1 h5 {
+  color: darkgray
+}
+
+/* .bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+ .bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 11s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translate(100px);
+  }
+
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+
+  html,
+  body {
+    margin: 0;
+    overflow: visible;
+  }
+
+  main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+  }
+
+  .box2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bubbles {
+    display: none;
+    ;
+  }
+}
